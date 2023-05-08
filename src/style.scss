@@ -1,0 +1,128 @@
+$lightgreen: #b9e7e7;
+$theme: #fc6540;
+
+.app {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1024px;
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    //Login and Register
+    .auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $lightgreen;
+
+      h1 {
+        font-style: 1rem;
+        margin-bottom: 1rem;
+        color: teal;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: white;
+        width: 12rem;
+        gap: 1rem;
+      }
+
+      input {
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid grey;
+      }
+
+      button {
+        cursor: pointer;
+        padding: 0.5rem;
+        border: none;
+        background-color: teal;
+        color: white;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+      }
+
+      p {
+        font-size: 0.8rem;
+        text-align: center;
+        color: red;
+        margin: 0;
+      }
+      span {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+    }
+  }
+
+  //Navbar
+
+  .navbar {
+    .container {
+      padding: 10px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        h6 {
+          font-size: 16px;
+          font-weight: 300;
+        }
+
+        span {
+          cursor: pointer;
+        }
+
+        .write {
+          background-color: $theme;
+          color: white;
+          font-weight: 300;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid white;
+
+          &:hover {
+            color: $theme;
+            background-color: white;
+            border: 1px solid $theme;
+          }
+        }
+      }
+    }
+  }
+
+  //Footer
+  footer {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fc6640bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
